@@ -61,7 +61,7 @@
 
                 <!-- "kakao${YOUR_NATIVE_APP_KEY}://oauth" 형식의 앱 실행 스킴 설정 -->
                 <!-- 카카오 로그인 Redirect URI -->
-                <data android:scheme="kakao975b5cb3db5f1f5a2f98cc1e1e3abcdb" android:host="oauth"/>
+                <data android:scheme="" android:host="oauth"/>
             </intent-filter>
         </activity>
         <!-- Set up the Sign in with Apple activity, such that it's callable from the browser-redirect -->
@@ -82,13 +82,13 @@
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
-            android:value="igrxhdn80n" />
+            android:value="" />
         <meta-data
             android:name="com.naver.sdk.clientId"
-            android:value="eFvJDJafweGJ1pThnCVw" />
+            android:value="" />
         <meta-data
             android:name="com.naver.sdk.clientSecret"
-            android:value="L3u9lm_S2q" />
+            android:value="" />
         <meta-data
             android:name="com.naver.sdk.clientName"
             android:value="알투레" />
