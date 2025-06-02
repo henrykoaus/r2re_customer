@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>R2re</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>r2re</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.r2rekorea.r2reapp</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.r2rekorea.r2reapp</string>
+				<string>com.googleusercontent.apps.923927006659-tkls50qd2b3m4sfe43qbb6opp7o6ulsm</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>GIDClientID</key>
+	<string>923927006659-tkls50qd2b3m4sfe43qbb6opp7o6ulsm.apps.googleusercontent.com</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>kakao975b5cb3db5f1f5a2f98cc1e1e3abcdb</string>
+		<string>naversearchapp</string>
+		<string>naversearchthirdlogin</string>
+		<string>sms</string>
+		<string>tel</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>naver.com</key>
+			<dict>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
+			<key>naver.net</key>
+			<dict>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSFaceIDUsageDescription</key>
+	<string>생체인증 결제 진행시 권한이 필요합니다</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Constantly updated Location is required as the service providers (restaurants) are displayed on the screen depending on the location as the data in accordance with the calculated distance is set to be shown within a certain distance to the user.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Updated real-time location is to be used for keeping the available service providers within a certain distance updated, so the user can keep themselves updated on the available nearby service providers.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Location is only used to indicate the distance between the user and service providers(restaurants), and depending on the distance they or the data are displayed on the screen.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Need location when in use for distance calculation between the user and service providers (restaurants) so the distance between one another can be displayed on the screen.</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>naverConsumerKey</key>
+	<string>eFvJDJafweGJ1pThnCVw</string>
+	<key>naverConsumerSecret</key>
+	<string>L3u9lm_S2q</string>
+	<key>naverServiceAppName</key>
+	<string>알투레</string>
+	<key>naverServiceAppUrlScheme</key>
+	<string>com.r2rekorea.r2reapp</string>
+</dict>
+</plist>

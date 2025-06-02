@@ -1,0 +1,76 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:r2re/components/card_models/restaurant_card_model.dart';
+import 'package:r2re/components/dialogs.dart';
+import 'package:r2re/state_management/restaurant_card_display_provider.dart';
+
+class FavouriteDealsDisplay extends StatefulWidget {
+  const FavouriteDealsDisplay({super.key});
+
+  @override
+  State<FavouriteDealsDisplay> createState() => _FavouriteDealsDisplayState();
+}
+
+class _FavouriteDealsDisplayState extends State<FavouriteDealsDisplay> {
+  @override
+  Widget build(BuildContext context) {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    final restaurantDataProvider =
+        Provider.of<RestaurantCardDisplayProvider>(context);
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(5, 0, 5, 20),
+      child: FutureBuilder<void>(
+        future:
+            restaurantDataProvider.fetchFavouriteRestaurants(currentUser!.uid),
+        builder: (context, snapshot) {
+          if (snapshot.hasError) {
+            return Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Wrap(
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      settingDialog(context);
+                    },
+                    child: const Text(
+                      '위치 권한을 설정해 주셔야 합니다',
+                      style: TextStyle(color: Colors.pink),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          } else if (restaurantDataProvider.favouriteRestaurants.isEmpty) {
+            return const Padding(
+              padding: EdgeInsets.all(20),
+              child: Text(
+                '찜하신 음식점이 아직 없습니다.',
+                style: TextStyle(fontSize: 18),
+              ),
+            );
+          } else {
+            return SizedBox(
+              height: 230,
+              width: 190,
+              child: ListView.builder(
+                shrinkWrap: true,
+                physics: const BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                itemCount:
+                    (restaurantDataProvider.favouriteRestaurants.length >= 30)
+                        ? 30
+                        : restaurantDataProvider.favouriteRestaurants.length,
+                itemBuilder: (context, index) {
+                  final restaurantData =
+                      restaurantDataProvider.favouriteRestaurants[index];
+                  return RestaurantCardModel(data: restaurantData);
+                },
+              ),
+            );
+          }
+        },
+      ),
+    );
+  }
+}
