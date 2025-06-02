@@ -49,22 +49,7 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCLDE43QktyeFdRtkm1RHArUZy9PzEadf4',
-    appId: '1:923927006659:android:46abf7aa84a8ab95a6c176',
-    messagingSenderId: '923927006659',
-    projectId: 'r2re-75417',
-    storageBucket: 'r2re-75417.appspot.com',
-  );
+  static const FirebaseOptions android = Env.googleAndroid;
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCMC-dDEt_6hxYdSlYht4LQBW1wbEBsLF4',
-    appId: '1:923927006659:ios:516e5984c3e22a1ba6c176',
-    messagingSenderId: '923927006659',
-    projectId: 'r2re-75417',
-    storageBucket: 'r2re-75417.appspot.com',
-    androidClientId: '923927006659-c7hv07rvv363q4v5i6mof3nbuhhakn8k.apps.googleusercontent.com',
-    iosClientId: '923927006659-tkls50qd2b3m4sfe43qbb6opp7o6ulsm.apps.googleusercontent.com',
-    iosBundleId: 'com.r2rekorea.r2reapp',
-  );
+  static const FirebaseOptions ios = Env.googleIos;
 }
