@@ -32,17 +32,17 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>com.r2rekorea.r2reapp</string>
-				<string>com.googleusercontent.apps.923927006659-tkls50qd2b3m4sfe43qbb6opp7o6ulsm</string>
+				<string>com.googleusercontent</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>GIDClientID</key>
-	<string>923927006659-tkls50qd2b3m4sfe43qbb6opp7o6ulsm.apps.googleusercontent.com</string>
+	<string>googleusercontent.com</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>kakao975b5cb3db5f1f5a2f98cc1e1e3abcdb</string>
+		<string></string>
 		<string>naversearchapp</string>
 		<string>naversearchthirdlogin</string>
 		<string>sms</string>
@@ -104,9 +104,9 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>naverConsumerKey</key>
-	<string>eFvJDJafweGJ1pThnCVw</string>
+	<string></string>
 	<key>naverConsumerSecret</key>
-	<string>L3u9lm_S2q</string>
+	<string></string>
 	<key>naverServiceAppName</key>
 	<string>알투레</string>
 	<key>naverServiceAppUrlScheme</key>
