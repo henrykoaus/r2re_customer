@@ -19,4 +19,8 @@ abstract class Env {
   static final String bootpay_android = _Env.bootpay_android;
   @EnviedField(varName: 'bootpay_ios', obfuscate: true)
   static final String bootpay_ios = _Env.bootpay_ios;
+  @EnviedField(varName: 'googleAndroid', obfuscate: true)
+  static final String googleAndroid = _Env.googleAndroid;
+  @EnviedField(varName: 'googleIos', obfuscate: true)
+  static final String googleIos = _Env.googleIos;
 }
